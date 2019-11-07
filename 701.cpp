@@ -12,19 +12,19 @@ private:
 int numerator;
 int denominator;
 public:
-Rational(int n=0,int d=1)//´øÄ¬ÈÏ²ÎÊıµÄ¹¹Ôìº¯Êı£¬ÕûÊıÓë·ÖÊıµÄÔËËãÓ­ÈĞ¶ø½â
+Rational(int n=0,int d=1)//å¸¦é»˜è®¤å‚æ•°çš„æ„é€ å‡½æ•°ï¼Œæ•´æ•°ä¸åˆ†æ•°çš„è¿ç®—è¿åˆƒè€Œè§£
 {
 numerator=n;
 denominator=d;
 }
-friend ostream& operator<<(std::ostream&, const Rational&); //ÖØÔØÊä³ö
-friend istream& operator>>(std::istream&, Rational&); //ÖØÔØÊäÈë
-friend bool operator==(const Rational&, const Rational&); //ÅĞ¶ÏÓĞÀíÊıÊÇ·ñÏàµÈ£¬ÒÔÏÂÀàËÆ
+friend ostream& operator<<(std::ostream&, const Rational&); //é‡è½½è¾“å‡º
+friend istream& operator>>(std::istream&, Rational&); //é‡è½½è¾“å…¥
+friend bool operator==(const Rational&, const Rational&); //åˆ¤æ–­æœ‰ç†æ•°æ˜¯å¦ç›¸ç­‰ï¼Œä»¥ä¸‹ç±»ä¼¼
 friend bool operator<(const Rational&, const Rational&);
 friend bool operator>(const Rational&, const Rational&);
 friend bool operator>=(const Rational&, const Rational&);
 friend bool operator<=(const Rational&, const Rational&);
-friend Rational operator +(const Rational&,const Rational&);//ÖØÔØÔËËã·û
+friend Rational operator +(const Rational&,const Rational&);//é‡è½½è¿ç®—ç¬¦
 friend Rational operator -(const Rational&,const Rational&);
 friend Rational operator *(const Rational&,const Rational&);
 friend Rational operator /(const Rational&,const Rational&);
@@ -115,7 +115,6 @@ cout<<"b-a="<<b-a<<endl;
 Sleep(1000);
 cout<<"a-b="<<a-b<<endl;
 Sleep(1000);
-cout<<"a/b="<<a/b<<endl;
 Sleep(1000);
 return 0;
 }
